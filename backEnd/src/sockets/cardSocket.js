@@ -1,4 +1,4 @@
-import GameSession from "../models/GameSession.js";
+import GameSession from "../models/gameSession.js";
 
 const cardSocket = (io, socket) => {
   console.log("🟢 Card socket connected:", socket.id);

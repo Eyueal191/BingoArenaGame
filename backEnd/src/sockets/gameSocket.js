@@ -1,5 +1,5 @@
 import GameSession from "../models/gameSession.js";
-import User from "../models/User.js";
+import User from "../models/user.js";
 import numbersList from "../seed/numberSeed.js";
 import shuffler from "../utils/shuffler.js";
 import { isMarkedReallyCalled, checkBingo } from "../utils/validators.js";

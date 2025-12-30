@@ -1,0 +1,319 @@
+@import "tailwindcss";
+
+/* ======================================================
+   DEFAULT THEME (Fallback)
+   Blue · Dark
+   ====================================================== */
+:root {
+  --color-bg: #0f1323;
+  --color-surface: #1c1d27;
+  --color-text: #ffffff;           /* Main text color */
+  --color-surface-text: #e5e7eb;   /* Secondary text */
+  --color-border: #3b3f54;
+
+  --color-primary: #607afb;
+  --color-primary-hover: #4e65d9;
+  --color-secondary: #282b39;
+  --color-secondary-hover: #323546;
+  --color-on-primary: #ffffff;
+  --color-on-secondary: #ffffff;
+
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  --color-primary-accent: #9da1b9;
+  --color-secondary-accent: #6b7280;
+
+  --color-highlight-on-bg: #7c8cff;
+  --color-highlight-on-surface: #b3b8ff;
+}
+
+/* ======================================================
+   BLUE SYSTEM
+   ====================================================== */
+
+/* Blue · Dark Mode */
+:root.blue.dark {
+  --color-bg: #0f1323;
+  --color-surface: #1c1d27;
+  --color-text: #ffffff;           /* White text for dark mode */
+  --color-surface-text: #e5e7eb;
+  --color-border: #3b3f54;
+
+  --color-primary: #607afb;
+  --color-primary-hover: #4e65d9;
+  --color-secondary: #282b39;
+  --color-secondary-hover: #323546;
+  --color-on-primary: #ffffff;
+  --color-on-secondary: #ffffff;
+
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  --color-primary-accent: #9da1b9;
+  --color-secondary-accent: #6b7280;
+
+  --color-highlight-on-bg: #7c8cff;
+  --color-highlight-on-surface: #b3b8ff;
+}
+
+/* Blue · Light Mode */
+:root.blue.light {
+  --color-bg: #f5f7fb;
+  --color-surface: #ffffff;
+  --color-text: #1f2937;           /* Dark text for light mode */
+  --color-surface-text: #111827;
+  --color-border: #d0d6e0;
+
+  --color-primary: #4f6df5;
+  --color-primary-hover: #3f5ce0;
+  --color-secondary: #e5e9f5;
+  --color-secondary-hover: #d6dcf0;
+  --color-on-primary: #ffffff;
+  --color-on-secondary: #1f2937;
+
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #2563eb;
+
+  --color-primary-accent: #3b4fd8;
+  --color-secondary-accent: #6b7280;
+
+  --color-highlight-on-bg: #6f85ff;
+  --color-highlight-on-surface: #9aa7ff;
+}
+
+/* ======================================================
+   GREEN SYSTEM
+   ====================================================== */
+   /*
+   This the boiler plate of the Color Design System.
+
+   1. bg  * backgroun
+          *
+          *
+          *
+          *
+
+   2.
+   3.
+   4.
+   
+   */
+
+/* Green · Dark */
+:root.green.dark {
+  --color-bg: #0b1410;
+  --color-surface: #122019;
+  --color-text: #ecfdf5;
+  --color-surface-text: #d1fae5;
+  --color-border: #1f3a2d;
+
+  --color-primary: #22c55e;
+  --color-primary-hover: #16a34a;
+  --color-secondary: #13261d;
+  --color-secondary-hover: #1b3a2a;
+  --color-on-primary: #052e16;
+  --color-on-secondary: #ffffff;
+
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  --color-primary-accent: #86efac;
+  --color-secondary-accent: #6b7280;
+
+  --color-highlight-on-bg: #4ade80;
+  --color-highlight-on-surface: #86efac;
+}
+
+/* Green · Light */
+:root.green.light {
+  --color-bg: #f6f8f7;
+  --color-surface: #ffffff;
+  --color-text: #1f2937;
+  --color-surface-text: #111827;
+  --color-border: #c4c7cc;
+
+  --color-primary: #22c55e;
+  --color-primary-hover: #16a34a;
+  --color-secondary: #e5e7eb;
+  --color-secondary-hover: #d1d5db;
+  --color-on-primary: #ffffff;
+  --color-on-secondary: #1f2937;
+
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #2563eb;
+
+  --color-primary-accent: #15803d;
+  --color-secondary-accent: #6b7280;
+
+  --color-highlight-on-bg: #16a34a;
+  --color-highlight-on-surface: #22c55e;
+}
+
+/* ======================================================
+   TAILWIND UTILITIES
+   ====================================================== */
+@layer utilities {
+  /* =========================
+     Backgrounds
+     ========================= */
+  .bg-bg {
+    background-color: var(--color-bg);
+  }
+
+  .bg-surface {
+    background-color: var(--color-surface);
+  }
+
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+
+  .bg-highlight {
+    background-color: var(--color-highlight-on-bg);
+  }
+
+  .bg-highlight-surface {
+    background-color: var(--color-highlight-on-surface);
+  }
+
+  .bg-primary-hover:hover {
+    background-color: var(--color-primary-hover);
+  }
+
+  .bg-secondary-hover:hover {
+    background-color: var(--color-secondary-hover);
+  }
+
+  /* =========================
+     Text Colors
+     ========================= */
+  .text-text {
+    color: var(--color-text);
+  }
+
+  .text-surface-text {
+    color: var(--color-surface-text);
+  }
+
+  .text-on-primary {
+    color: var(--color-on-primary);
+  }
+
+  .text-on-secondary {
+    color: var(--color-on-secondary);
+  }
+
+  .text-highlight-on-bg {
+    color: var(--color-highlight-on-bg);
+  }
+
+  .text-highlight-on-surface {
+    color: var(--color-highlight-on-surface);
+  }
+
+  /* =========================
+     Borders
+     ========================= */
+  .border-border {
+    border-color: var(--color-border);
+  }
+
+  /* =========================
+     Semantic Colors
+     ========================= */
+  .text-success {
+    color: var(--color-success);
+  }
+
+  .text-warning {
+    color: var(--color-warning);
+  }
+
+  .text-error {
+    color: var(--color-error);
+  }
+
+  .text-info {
+    color: var(--color-info);
+  }
+
+  /* =========================
+     Accent Colors
+     ========================= */
+  .text-primary-accent {
+    color: var(--color-primary-accent);
+  }
+
+  .text-secondary-accent {
+    color: var(--color-secondary-accent);
+  }
+}
+
+@layer components {
+  /* Hero / Page Titles */
+  .text-hero {
+    @apply font-bold text-3xl sm:text-4xl md:text-5xl leading-tight;
+    color: var(--color-text);
+  }
+
+  /* Headings */
+  .text-heading {
+    @apply font-semibold text-xl sm:text-2xl md:text-3xl leading-snug;
+    color: var(--color-text);
+  }
+
+  /* Subheadings / Labels */
+  .text-subheading {
+    @apply font-medium text-sm sm:text-base leading-snug;
+    color: var(--color-surface-text);
+  }
+
+  /* Body Text */
+  .text-body {
+    @apply font-normal text-sm sm:text-base leading-relaxed;
+    color: var(--color-text);
+  }
+
+  /* Accent / Helper Text */
+  .text-accent {
+    @apply font-normal text-xs sm:text-sm leading-snug;
+    color: var(--color-secondary-accent);
+  }
+
+  /* Button Text */
+  .text-button {
+    @apply font-medium text-sm sm:text-base leading-snug;
+    color: var(--color-on-primary);
+  }
+
+  /* Caption Text */
+  .text-caption {
+    @apply font-normal text-xs leading-snug;
+    color: var(--color-secondary-accent);
+  }
+
+  /* Highlighted / Links */
+  .high_lighted_text {
+    @apply font-semibold hover:underline cursor-pointer;
+    color: var(--color-highlight-on-surface);
+  }
+}
+
+
+
+

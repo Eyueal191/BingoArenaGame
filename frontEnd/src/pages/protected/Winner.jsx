@@ -11,7 +11,7 @@ function Winner() {
       clearGameData();
       console.log("🧹 Game data cleared after 45 seconds");
       navigate("/lobby");
-    }, 45000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, [clearGameData, navigate]);

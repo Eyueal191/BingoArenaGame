@@ -11,7 +11,7 @@ function Loser() {
       clearGameData();
       console.log("🧹 Game data cleared after 45 seconds");
       navigate("/lobby");
-    }, 45000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, [clearGameData, navigate]);
@@ -34,13 +34,10 @@ function Loser() {
         {winner && (
           <div className="bg-secondary rounded-xl p-4 space-y-2">
             <p className="text-subheading text-surface-text">
-              Winner
+              Winning Card
             </p>
             <p className="text-heading text-success">
-              {winner.name}
-            </p>
-            <p className="text-body text-surface-text">
-              Card #{winner.cardNumber}
+              #{winner.winningCard}
             </p>
           </div>
         )}
